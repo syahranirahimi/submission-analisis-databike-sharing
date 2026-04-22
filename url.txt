@@ -1,0 +1,1 @@
+Proyek ini dijalankan di lingkungan lokal (Localhost) dan tidak dilakukan deployment ke cloud.
