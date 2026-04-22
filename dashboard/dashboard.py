@@ -24,9 +24,6 @@ path_hour = os.path.join(current_dir, "hour_clean.csv")
 day_df = pd.read_csv(path_day)
 hour_df = pd.read_csv(path_hour)
 
-day_df = pd.read_csv("dashboard/day_clean.csv")
-hour_df = pd.read_csv("dashboard/hour_clean.csv")
-
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])
 hour_df["dteday"] = pd.to_datetime(hour_df["dteday"])
 
