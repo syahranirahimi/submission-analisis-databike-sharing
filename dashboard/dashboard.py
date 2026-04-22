@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+import os
 
 st.set_page_config(page_title="Bike Sharing Dashboard", page_icon="🚲", layout="wide")
 sns.set(style='ticks')
@@ -14,6 +15,14 @@ def create_weather_rent_df(df):
 
 def create_hourly_rent_df(df):
     return df.groupby("hr").cnt.mean().reset_index()
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+path_day = os.path.join(current_dir, "day_clean.csv")
+path_hour = os.path.join(current_dir, "hour_clean.csv")
+
+day_df = pd.read_csv(path_day)
+hour_df = pd.read_csv(path_hour)
 
 day_df = pd.read_csv("dashboard/day_clean.csv")
 hour_df = pd.read_csv("dashboard/hour_clean.csv")
