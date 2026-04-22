@@ -1,5 +1,3 @@
-# submission-analisis-databike-sharing
-
 # 🚴‍♂️ Bike Sharing Analysis Dashboard
 
 ## 📊 Project Overview
