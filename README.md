@@ -22,7 +22,9 @@ Pastikan Anda telah menginstal Anaconda atau Python di komputer Anda. Buka Termi
 conda create --name main-ds python=3.9
 conda activate main-ds
 pip install -r requirements.txt
+```
 ### 2. Menjalankan Dashboard
-Setelah semua library terinstal, pastikan Anda berada di direktori utama proyek, lalu jalankan perintah berikut:
+Setelah semua library terinstal, pastikan Anda berada di direktori utama proyek (folder submission), lalu jalankan perintah berikut:
 ```bash
 streamlit run dashboard/dashboard.py
+```
